@@ -14,7 +14,12 @@
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self setAnimationTimeInterval:1/60.0];
+        
+        self.streaks =  [NSMutableArray arrayWithCapacity:(16)];
+        for(int col=0; col < 5; col++) {
+            [self.streaks addObject: [PathLine PathLineWithWidth:self.bounds.size.width andHeight:self.bounds.size.height]];
+        }
     }
     return self;
 }
@@ -36,6 +41,14 @@
 
 - (void)animateOneFrame
 {
+    [[NSColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.1] set];
+    NSRect bounds = [self bounds];
+    [[NSBezierPath bezierPathWithRect:bounds] fill];
+    
+    for (PathLine *streak in self.streaks) {
+        [streak step];
+        [streak draw];
+    }
     return;
 }
 

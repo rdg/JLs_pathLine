@@ -7,7 +7,10 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+#import <PathLine.h>
 
 @interface JLsPathLineView : ScreenSaverView
+
+@property (nonatomic, strong) NSMutableArray *streaks;
 
 @end

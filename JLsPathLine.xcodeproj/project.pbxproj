@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AEB6ED902081986200BE8DA8 /* JLsPathLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB6ED8F2081986200BE8DA8 /* JLsPathLineView.h */; };
 		AEB6ED922081986200BE8DA8 /* JLsPathLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6ED912081986200BE8DA8 /* JLsPathLineView.m */; };
+		AEB6ED9B20819AA500BE8DA8 /* PathLine.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB6ED9920819AA500BE8DA8 /* PathLine.h */; };
+		AEB6ED9C20819AA500BE8DA8 /* PathLine.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6ED9A20819AA500BE8DA8 /* PathLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		AEB6ED8F2081986200BE8DA8 /* JLsPathLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLsPathLineView.h; sourceTree = "<group>"; };
 		AEB6ED912081986200BE8DA8 /* JLsPathLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLsPathLineView.m; sourceTree = "<group>"; };
 		AEB6ED932081986200BE8DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB6ED9920819AA500BE8DA8 /* PathLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathLine.h; sourceTree = "<group>"; };
+		AEB6ED9A20819AA500BE8DA8 /* PathLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				AEB6ED8F2081986200BE8DA8 /* JLsPathLineView.h */,
 				AEB6ED912081986200BE8DA8 /* JLsPathLineView.m */,
 				AEB6ED932081986200BE8DA8 /* Info.plist */,
+				AEB6ED9920819AA500BE8DA8 /* PathLine.h */,
+				AEB6ED9A20819AA500BE8DA8 /* PathLine.m */,
 			);
 			path = JLsPathLine;
 			sourceTree = "<group>";
@@ -63,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB6ED902081986200BE8DA8 /* JLsPathLineView.h in Headers */,
+				AEB6ED9B20819AA500BE8DA8 /* PathLine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB6ED9C20819AA500BE8DA8 /* PathLine.m in Sources */,
 				AEB6ED922081986200BE8DA8 /* JLsPathLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
